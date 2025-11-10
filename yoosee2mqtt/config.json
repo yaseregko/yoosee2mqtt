@@ -10,7 +10,7 @@
   "boot": "auto",
   "panel_icon": "mdi:mqtt",
   "map": [
-    "config:rw",
+    "config:rw"
   ],
   "ports": {
     "25/tcp": 25
