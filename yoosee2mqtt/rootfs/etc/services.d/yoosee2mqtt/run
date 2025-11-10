@@ -1,0 +1,14 @@
+#!/usr/bin/env bashio
+# ==============================================================================
+# Home Assistant Community Add-on: yoosee2mqtt for video doorbell
+# Runs the yoosee2mqtt
+# ==============================================================================
+
+bashio::log.info "Starting yoosee2mqtt..."
+
+export DISABLE_IPV6="true"
+
+cd /app \
+    || bashio::exit.nok "Could not change directory to app"
+
+exec node /app/yoosee2mqtt.js

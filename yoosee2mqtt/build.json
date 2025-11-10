@@ -1,0 +1,8 @@
+{
+  "squash": false,
+  "build_from": {
+    "aarch64": "node:alpine",
+    "amd64": "node:alpine"
+  },
+  "args": {}
+}
