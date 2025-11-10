@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "fs": "^0.0.1-security",
-    "mailparser": "^3.9.0",
-    "mqtt": "^5.14.1",
-    "smtp-server": "^3.16.1"
-  }
-}
