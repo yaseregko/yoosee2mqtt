@@ -5,10 +5,12 @@ const {SMTPServer}  = require('smtp-server');
 const simpleParser  = require('mailparser').simpleParser;
 const mqtt          = require('mqtt');
 
-if (fs.existsSync('./options.json')) {
-    const config    = JSON.parse(fs.readFileSync('./options.json', 'utf8'));
-} else {
-    const config    = {};
+const config = {};
+
+if (fs.existsSync('/data/options.json')) {
+   config    = JSON.parse(fs.readFileSync('/data/options.json', 'utf8'));
+//} else {
+//    const config    = {};
 }
 
 const mqttUrl       = config.mqtt_url || 'mqtt://core-mosquitto:1883';
